@@ -1,16 +1,17 @@
 {
-  "name": "sisugoogleapi",
+  "name": "headlesscrawl",
   "version": "1.0.0",
   "description": "",
-  "main": "apiController.js",
+  "main": "index.js",
   "scripts": {
-    "crawl": "node --experimental-modules crawler.mjs",
+    "start": "node index.js",
     "lint": "eslint src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browser-agents": "^1.0.1",
     "dotenv": "^4.0.0",
     "eslint": "^4.12.0",
     "eslint-config-airbnb": "^16.1.0",
