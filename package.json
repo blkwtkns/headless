@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-voting": "node index.js vote",
-    "check-votes": "node index.js check",
-    "grab-screen": "node index.js screen",
+    "start": "node vote.js",
+    "tally": "node tally.js",
     "lint": "eslint src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
