@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const agents = require('browser-agents');
-
-const bronx = 'li#my_db_entry_191140347>div.item_vote>a';
+const bronxBox = 'li#my_db_entry_191140347>div.item_vote>a';
+// const blanketBox = 'li#my_db_entry_190906199>div.item_vote>a';
 const votesList = '.votes';
 const dest = 'https://a.pgtb.me/RbrpXd/n1kPk?w=67644150&e=191140347';
 
@@ -33,7 +33,7 @@ const vote = async (voteNumber = 0) => {
 
   // click element
   try {
-    await page.click(bronx);
+    await page.click(bronxBox);
   } catch(err) {
     console.log('selection not handled', err)
   }
